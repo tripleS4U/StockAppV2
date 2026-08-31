@@ -33,7 +33,7 @@ internal class MDnsHostManual : IMDnsHost
         if (aliveInfo == null) return;
         if (aliveInfo.AppVersion != null && !string.IsNullOrWhiteSpace(aliveInfo.AppVersion) && aliveInfo.AppVersion != Version) Version = aliveInfo.AppVersion;
         if (aliveInfo.HostName != null && !string.IsNullOrWhiteSpace(aliveInfo.HostName) && aliveInfo.HostName != HostName) HostName = aliveInfo.HostName;
-        if (aliveInfo.IpAddress != null && !string.IsNullOrWhiteSpace(aliveInfo.IpAddress) && aliveInfo.IpAddress != IPAddress) IPAddress = aliveInfo.AppVersion;
+        if (aliveInfo.IpAddress != null && !string.IsNullOrWhiteSpace(aliveInfo.IpAddress) && aliveInfo.IpAddress != IPAddress) IPAddress = aliveInfo.IpAddress;
     }
 }
 
